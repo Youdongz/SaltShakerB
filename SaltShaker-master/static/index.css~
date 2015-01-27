@@ -1,0 +1,170 @@
+html, body {
+	min-width: 1200px;
+	min-height: 100%;
+	height: 100%;
+	font-family: Helvetica, sans-serif;
+}
+
+.nav {
+	height: 90px;
+	width: 100%;
+	background-color: #F95857;
+	box-shadow: 0px 0px 5px #888888;
+}
+
+.nav h1 {
+	color: white;
+	font-style: italic;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 48px;
+	text-align: center;
+}
+
+.main {
+	margin-top: 15px;
+	min-height: 100%;
+}
+
+.main .container {
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+
+.main #enter-complain h3 {
+	font-weight: lighter;
+	font-size: 24px;
+	text-align: center;
+}
+
+.main #complaint-box {
+	width: 87%;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	padding: 3px;
+	border: 1px solid;
+	border-radius: 3px;
+}
+
+.main #complaint-box:focus {
+	outline: none;
+}
+
+.main #button {
+	width: 12%;
+	border: 1px solid #F95857;
+	border-radius: 3px;
+	color: #F95857;
+	background-color: white;
+}
+
+.main #button:hover {
+	-webkit-transition: 0.5s;
+	border: 1px solid #FA8685;
+	background-color: #FA8685;
+	color: white;
+}
+
+.main .complaint {
+	height: 100px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.main .container2 {
+	position: relative;
+}
+
+.mian .stack-container {
+	width: 100%;
+	padding: 20px;
+}
+
+.main .stack {
+	width: 100%;
+	height: 100px;
+	border: 1px solid white;
+	border-radius: 3px;
+	background-color: white; 
+	box-shadow: 0px 0px 2px #9a9a9a;
+}
+
+.main .count {
+	width: 100%;
+	height: 100px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px #9a9a9a;
+	text-align: center;
+}
+
+.main .count p {
+	font-weight: bold;
+	color: #F95857;
+	font-size: 26px;
+	padding-top: 30px;
+}
+
+.main .stack {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.main .vote-up {
+	width: 100%;
+	height: 45px;
+	font-weight: bold;
+	color: #F95857;
+	margin-bottom: 10px;
+	border: 1px solid white;
+	border-radius: 23px;
+	background-color: white; 
+	box-shadow: 0px 0px 2px #9a9a9a;
+	padding-top: 12px;
+}
+
+.main .vote-up:hover {
+	-webkit-transition: 0.5s;
+	outline: none;
+	color: white;
+	border: 1px solid #F95857;
+	background-color: #F95857;
+}
+
+.main .vote-container a {
+	text-align: center;
+}
+
+.main .vote-container a:hover {
+	text-decoration: none;
+	text-align: center;
+}
+
+.main .vote-down {
+	width: 100%;
+	height: 45px;
+	color: #F95857;
+	font-weight: bold;
+	border: 1px solid white;
+	border-radius: 23px;
+	background-color: white; 
+	box-shadow: 0px 0px 2px #9a9a9a;
+	padding-top: 12px;
+}
+
+.main .vote-down:hover {
+	-webkit-transition: 0.5s;
+	outline: none;
+	color: white;
+	border: 1px solid #F95857;
+	background-color: #F95857;
+	text-decoration: none;
+}
+
+.footer {
+
+}

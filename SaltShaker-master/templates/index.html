@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<link href="../static/bootstrap.css" rel="stylesheet">
+			<link href="../static/index.css" type="text/css" rel="stylesheet">
+			<link href="../favicon.ico" rel="shortcut icon">
+			<title>SaltShaker</title>
+		</head>
+		<body>
+			<div class='nav'>
+				<div class='container'>
+					<div class='col-md-2'></div>
+					<div class='col-md-8'>
+						<h1>SaltShaker @ Berkeley</h1>
+					</div>
+					<div class='col-md-2'></div>
+				</div>
+			</div>
+
+			<div class='main'>
+				<div class='container'>
+					<div class='col-md-2'></div>
+					<div class='col-md-8' id='enter-complain'>
+						<h3>Enter your complaint here&nbsp&nbsp(╯°□°）╯︵ ┻━┻</h3>
+						<form action='/complain' method='POST'>
+							<input name='complaint' type='text' id='complaint-box'></input>
+							<!--<div id='button-container'>-->
+							<input id="button" type="submit" value="Complain!"></input>
+							<!--</div>-->
+						</form>
+					</div>
+					<div class='col-md-2'></div>
+				</div>
+				<div class='container2'>
+					<div class='col-md-2'></div>
+					<div class='col-md-8'>
+						{% for complaint in all_complaints %}
+						<div class='complaint'>
+							<div class='col-md-2'>
+								<div class='count'>
+									<p>{{complaint.score}}</p>
+								</div>
+							</div>
+							<div class='col-md-9'>
+								<div class='stack-container'>
+									<div class='stack'>
+										<p>{{complaint.content}}</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-1'>
+								<div class='vote-container'>
+									<a href='/salt/{{complaint.identity}}'>
+										<div type='submit' class='vote-up'>↑</div>
+									</a>
+									<a href='/pepper/{{complaint.identity}}'>
+										<div type='submit' class='vote-down'>↓</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<div class='col-md-2'></div>
+				</div>
+			</div>
+
+			<div class='footer'>
+			</div>
+		</body>
+	</html>
